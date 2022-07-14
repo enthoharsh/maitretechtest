@@ -4,20 +4,19 @@ import Style from "./menu.module.css";
 import { useGlobalContext } from "../../context/Context";
 
 const Menu = () => {
-  const { state } = useGlobalContext();
-  const [isLogin, setIsLogin] = useState(false);
+  const { state,login } = useGlobalContext();
   const [user, setUser] = useState('');
   const [pass, setPass] = useState('')
   const submit = () => {
     if (user==='test' && pass==='pass') {
-      setIsLogin(true)
+      login()
     }
     else{
       alert('invalid credentials')
     }
   }
 
-  if (isLogin) {
+  if (state.isLogin) {
     return (
       <div className={Style.menuParent}>
       {state.data.map((item, index) => {
