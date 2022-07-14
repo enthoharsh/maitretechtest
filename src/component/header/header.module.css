@@ -1,0 +1,29 @@
+.header{
+    background-color: #622fec;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: 10vh;
+    box-shadow: 0px 3px 4px 0px #808080d1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.headerright{
+    margin-right: 2rem;
+}
+.headerright a{
+    display: inline-block;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+.headerleft{
+    display: flex;
+    margin-left: 2rem;
+}
