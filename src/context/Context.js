@@ -7,7 +7,6 @@ const AppContext = createContext();
 let initialState = {
     data:data,
     noi:[],
-    isLogin:false,
 };
 
 
@@ -19,11 +18,8 @@ const AppProvider = ({children}) => {
     const decrement = (data) => {
         dispatch({type:"decrement",payload: data})
     }
-    const login = () => {
-        dispatch({type:"login"})
-    }
   return (
-        <AppContext.Provider value={{state,increment,decrement,login}}>
+        <AppContext.Provider value={{state,increment,decrement}}>
             {children}
         </AppContext.Provider>
     );

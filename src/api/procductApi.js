@@ -19,6 +19,13 @@ const data = [
         image: "./assets/images.png",
         total:0,
         cost:0
+    },
+    {
+        item: "pepsi",
+        price:100,
+        image: "./assets/images.png",
+        total:0,
+        cost:0
     }
 ];
 
